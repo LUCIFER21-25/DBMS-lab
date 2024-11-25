@@ -1,0 +1,28 @@
+Q-A1: Yes
+Q-A2: The transaction deleting entry was not committed.
+
+Q-B1: read committed
+Q-B2: 120
+Q-B3: The first transaction has not yet committed.
+Q-B4: It can be either read committed or serializable.
+Q-B5: Yes both complete.
+Q-B6: There is no concurrent update or conflict.
+
+Q-C1: The second terminal waits.
+Q-C2: The second transaction needs a write lock held by the first transaction.
+Q-C3: The update command in the second transaction completes successfully
+Q-C4: 140
+Q-C5: The read committed isolation level permits concurrent updates, but the first update is lost.
+
+Q-D1: After the begin command but before the commit/abort.
+Q-D2:The second transaction waits.
+Q-D3: The update command in the second transaction reports an error.
+Q-D4: 44
+Q-D5: The serializable isolation level disallows concurrent updates and the second transaction rolls back.
+
+Q-E1: Yes 
+Q-E2: Its commit was performed first, before that of transaction-2
+Q-E3: No
+Q-E4: Its commit was performed later, after that of transaction-1, and there is no serializable schedule
+Q-E5: 95000.00 
+Q-E6: 95000.00 

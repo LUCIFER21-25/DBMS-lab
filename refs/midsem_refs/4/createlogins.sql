@@ -1,0 +1,2 @@
+insert into loginuser (stud_id, role, password_hash) values ('s0', 'student', crypt('weakpassword', gen_salt('bf', 10)));
+insert into loginuser (stud_id, role, password_hash) values ('s1', 'student', crypt('weakpassword', gen_salt('bf', 10)));

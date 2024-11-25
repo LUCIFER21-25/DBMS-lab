@@ -1,0 +1,1 @@
+insert into loginuser (admin_id, role, password_hash) values ('a0', 'admin', crypt('thisisnotstrong', gen_salt('bf', 10)));

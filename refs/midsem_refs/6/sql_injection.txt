@@ -1,0 +1,1 @@
+'; drop table sql_injection_dummy; select * from loginuser where role = 'student

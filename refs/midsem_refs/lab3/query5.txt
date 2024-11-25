@@ -1,0 +1,8 @@
+select distinct s.ID, s.name 
+from student s, takes t, course c, section sec
+where s.ID = t.ID and t.course_id = c.course_id and sec.course_id = c.course_id and c.dept_name = 'Comp. Sci.' 
+and s.ID in (
+    select distinct s2.ID
+    from student s2, takes t2, course c2, section sec2
+    where s2.ID = t2.ID and t2.course_id = c2.course_id and sec2.course_id = c2.course_id and c2.dept_name = 'Elec. Eng.' and t.semester = t2.semester and t.year = t2.year
+); 

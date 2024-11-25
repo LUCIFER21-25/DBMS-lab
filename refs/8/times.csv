@@ -1,0 +1,7 @@
+N, createTime, dropTime
+10, 13.062, 1.460
+100, 12.917, 2.166
+1000, 17.272, 1.446
+5000, 20.154, 2.283
+10000, 32.935, 1.584
+createTime depends on the number of data points. So createTime is increasing with number of data points. Deletion is only the deallocation of data which takes constant time.

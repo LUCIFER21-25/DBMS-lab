@@ -1,0 +1,1 @@
+select course_id,sec_id from section where year = 2024 and semester = 'Spring';

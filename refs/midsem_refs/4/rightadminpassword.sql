@@ -1,0 +1,1 @@
+SELECT (password_hash = crypt('thisisnotstrong', password_hash)) AS pwmatch FROM loginuser where admin_id = 'a0' ;

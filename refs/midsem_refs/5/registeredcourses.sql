@@ -1,0 +1,1 @@
+select course_id,sec_id from takes where id = 's00000' and year = 2024 and semester = 'Spring';

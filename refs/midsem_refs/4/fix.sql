@@ -1,0 +1,1 @@
+insert into department (dept_name) values ('Lukkagiri');

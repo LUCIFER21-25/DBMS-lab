@@ -1,0 +1,3 @@
+select all course.course_id, course.title
+from teaches, course
+where teaches.course_id = course.course_id and teaches.semester = 'Spring' and teaches.year = 2010;

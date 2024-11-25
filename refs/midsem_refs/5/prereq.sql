@@ -1,0 +1,1 @@
+select prereq_id from prereq where course_id = 'CS-315';
